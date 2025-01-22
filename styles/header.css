@@ -1,0 +1,112 @@
+.header {
+    max-width: 1800px;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .left-side {
+    display: flex;
+    gap: 65px;
+    align-items: center;
+}
+
+.header .left-side .logo-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.hamburger-button {
+    width: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger-button-top,
+.hamburger-button-middle,
+.hamburger-button-bottom {
+    height: 2px;
+    background: black;
+    transform-origin: left;
+    transition: all 0.5s;
+}
+
+.hamburger-button:hover .hamburger-button-top {
+    transform: rotate(33deg);
+}
+
+.hamburger-button:hover .hamburger-button-middle {
+    opacity: 0;
+}
+
+.hamburger-button:hover .hamburger-button-bottom {
+    transform: rotate(-33deg);
+}
+
+.header .left-side .logo-container .logo {
+    display: flex;
+}
+
+.header .left-side .menu {
+    display: flex;
+    gap: 40px;
+}
+
+.header .left-side .menu .menu-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+.header .left-side .menu .menu-item:hover,
+.header .left-side .menu .menu-item.active {
+    color: #FF8E8E;
+}
+
+.header .left-side .menu .menu-item .arrow-hover {
+    display: none;
+}
+
+.header .left-side .menu .menu-item.active .arrow-default,
+.header .left-side .menu .menu-item:hover .arrow-default {
+    display: none;
+}
+
+.header .left-side .menu .menu-item:hover .arrow-hover {
+    display: inline-block;
+}
+
+.header .left-side .menu .menu-item.active .arrow-hover {
+    display: inline-block;
+}
+
+.header .right-side {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header .right-side .header-icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.header .right-side .header-icon .counter {
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+}

@@ -1,0 +1,226 @@
+* {
+    font-family: Raleway;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.container .input {
+    border: none;
+    border-bottom: 1px solid rgba(68, 68, 68, 20%);
+    width: 100%;
+    color: #777777;
+    outline: none;
+    padding: 0 0 15px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.container .button-wrapper {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.container .button-wrapper .button {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    border: none;
+    background: rgba(0, 0, 0, 1);
+    padding: 17px 74px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.container .button-wrapper .vertical-line {
+    width: 2px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.container .opacity {
+    opacity: 0;
+}
+.container .price {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.container .price .current-price {
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.container .price .old-price {
+    font-family: Josefin Sans;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #000000;
+}
+
+.container .custom-list {
+    list-style: square;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.container .custom-list .item {
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.container .custom-list .item:hover {
+    color: #FF8E8E;
+}
+
+.container .custom-list .item.active {
+    color: #FF8E8E;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.container .custom-list .item.active::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-left: -15px;
+    background-image: url("../icon/category-row.svg");
+}
+
+.container .find-us .find-us-text {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    color: #000000;
+    ;
+}
+
+.container .find-us .find-us-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.container .find-us .find-us-links .line {
+    border-bottom: 1px solid #444444;
+    height: 1px;
+    width: 10px;
+}
+
+.container .find-us .find-us-links .find-us-link a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.09px;
+    color: #444444;
+}
+
+.up-side {
+    display: flex;
+    gap: 150px;
+    margin: 60px auto 0;
+    max-width: 1860px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.up-side .name {
+    margin: 0px 0 0 60px;
+    max-width: 850px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.up-side .name-and-line {
+display: flex;
+flex-direction: column;
+max-width: 850px;
+width: 100%;
+gap: 20px;
+}
+
+.up-side .vector-square {
+    position: absolute;
+}
+
+.up-side .name-and-line .name .content-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.up-side .name-and-line .name .content-block .title {
+    font-family: Josefin Sans;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.up-side .name-and-line .name .content-block .pages {
+    display: flex;
+    gap: 20px;
+}
+
+.up-side .name-and-line .name .content-block .pages .page:hover,
+.up-side .name-and-line .name .content-block .pages .page.active  {
+    color: #FF8E8E
+}
+
+.up-side .name-and-line .name .content-block .pages .page-line{
+    width: 1.5px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.up-side .name-and-line .name .content-block .pages .page {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.up-side .name-and-line .down-line {
+    background-color: black;
+    max-width: 850px;
+    width: 100%;
+    height: 2px;
+}
+
+.up-side .image {
+    max-width: 850px;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(241, 242, 243, 1);
+}
